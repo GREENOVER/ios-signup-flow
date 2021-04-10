@@ -33,28 +33,11 @@ final class FirstSignUpViewController: UIViewController {
     }
     
     @objc func editProfileImage(_ sender: UITapGestureRecognizer) {
-        if PHPhotoLibrary.authorizationStatus() != PHAuthorizationStatus.authorized {
-            PHPhotoLibrary.requestAuthorization({ (status: PHAuthorizationStatus) -> Void in
-                if status != .authorized {
-                    self.alertMessage()
-                } else {
-                    self.imagePicker.sourceType = .photoLibrary
-                    self.imagePicker.allowsEditing = true
-                    self.imagePicker.delegate = self
+        self.imagePicker.sourceType = .photoLibrary
+        self.imagePicker.allowsEditing = true
+        self.imagePicker.delegate = self
                     
-                    self.present(self.imagePicker, animated: true)
-                }
-            })
-        }
-    }
-    
-    func alertMessage() {
-        let alert = UIAlertController(title: "주의", message: "접근 권한 미허용으로 일부 기능이 동작하지 않습니다. 설정에서 허용을 해주십시오.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
-        
-        alert.addAction(okAction)
-        
-        present(alert, animated: true, completion: nil)
+        self.present(self.imagePicker, animated: true)
     }
     
     private func checkInfo() {
