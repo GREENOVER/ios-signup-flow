@@ -1,4 +1,4 @@
-# iOS Signup&Login Application
+# iOS Signup & Login Application
 ### 회원가입 및 로그인 기능을 구현한 프로젝트
 ***
 #### What have I done?
