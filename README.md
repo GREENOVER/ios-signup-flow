@@ -1,7 +1,8 @@
 # iOS Signup & Login Application
 ### 회원가입 및 로그인 기능을 구현한 프로젝트
+[Ground Rule](https://github.com/GREENOVER/ios-signup-flow/blob/main/GroundRule.md)
 ***
-#### What have I done?
+#### What I learned✍️
 - AutoLayout
 - Navigation
 - @available
@@ -16,7 +17,7 @@
 - Extension
 - final & private
 
-#### What I learned
+#### What have I done🧑🏻‍💻
 - StoryBoard에서의 오토레이아웃을 설정해보았다.
 - 네비게이션과 모달의 화면 이동 방식에 대해 이해하고 구현해보았다.
 - 기기 버전에 맞도록 AppDelegate와 SceneDelegate에서 코드 설정을 해주며 차이를 이해했다.
