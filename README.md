@@ -33,3 +33,25 @@
 - final과 private 등등 접근제어에 대해 학습하고 적절히 사용해보았다.
    - final: 해당 키워드를 붙여 오버라이드를 금지시켜 재정의할 필요가 없을때 사용하며 성능상 이점
    - private: 해당 키워드가 붙은 메서드를 해당 파일 내에서만 호출이 가능
+
+#### Trouble Shooting👨‍🔧
+
+
+
+
+
+
+#### Thinking Point🤔
+- 고민점 (1)
+  - "유저 정보를 담은 UserInforamtion에서 아래 사용자 정보 체크 기능을 수행할 필요하 있을까요?"
+  ```swift
+  func isSame(password: String, checkPassword: String) -> Bool
+  ```
+- 원인 및 대책
+  - 처음 유저정보를 싱글턴으로 구현해봐서 헷갈린 포인트였는데 유저정보를 담은 인스턴스가 해당 기능을 할 필요는 없다고 느껴져 체크하는 기능을 VC에서 하도록 하였다. 유저정보 싱글턴 클래스는 딱 유저정보만을 담고 있는것이 명확하고 해당 유저정보들을 활용하여 패스워드 체크 / 문자열필터 등의 기능은 필요한 VC에서 하도록 리팩토링하였다.
+- 고민점 (2)
+  - "var dateOfBirth: Date?의 변수명이 birthDate와 의미전달 차이가 있을까요?"
+- 원인 및 
+#### InApp📱
+![InAppTest](https://user-images.githubusercontent.com/72292617/116174159-d8b29c00-a748-11eb-94bf-bd4b9fed7dd7.gif)
+
