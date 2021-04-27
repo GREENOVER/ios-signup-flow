@@ -126,12 +126,11 @@
  ```swift
  final class FirstSignUpViewController: UIViewController
  ```
-
-
-
-
-
-
+- 고민점 (7)
+  - "화면 전환 방식에 대해 Modal과 Navigation중 어느것을 택했나요?"
+- 원인 및 대책
+  - 처음 화면을 구성할때 모든 화면이 연관성이 있다고 생각하여 navigation으로 구성하였었다. 네비게이션 방식은 화면간 연관성이 있는 뷰들을 push와 pop을 통해 스택에 담아 보여주는 과정이다. 모달은 그와 반대로 화면을 전환하면 그 화면 위에 덮는 present와 화면에서 제거하는 dismiss로 이뤄져있다. 즉 이번 프로젝트에서는 최초 로그인 화면에서 회원가입을 넘어가게 되는 전환은 modal로 네비게이션 컨트롤러와 연결하도록 수정하였고 회원가입 과정은 정보의 연속성이 있다 판단하여 네비게이션으로 화면 전환을 구성하였다. 아래와 같이 구성하였다.
+  <img width="908" alt="스크린샷 2021-04-27 오전 11 58 42" src="https://user-images.githubusercontent.com/72292617/116178100-ec153580-a74f-11eb-8084-2574a40e4cef.png">
 
 #### InApp📱
 ![InAppTest](https://user-images.githubusercontent.com/72292617/116174159-d8b29c00-a748-11eb-94bf-bd4b9fed7dd7.gif)
